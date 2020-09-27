@@ -24,9 +24,83 @@
 // const CANCELED_BY_USER = 'Отменено пользователем!';
 // const ACCESS_IS_ALLOWED = 'Добро пожаловать!';
 // const ACCESS_DENIED = 'Доступ запрещен, неверный пароль!';
+
 // let message;
 
 // if (userPassword === ADMIN_PASSWORD) {
-// console.log("ACCESS_IS_ALLOWED"); 
+//   message = ACCESS_IS_ALLOWED;
+ 
 // }
+// else if (userPassword === null) {
+//   message = CANCELED_BY_USER;
+// }
+// else if (userPassword !== ADMIN_PASSWORD) {
+//   message = ACCESS_DENIED;
+// }
+// console.log(message)
 
+// Задание 4
+// const orderPieces = 4;
+
+// const credits = 23580;
+// const pricePerDroid = 3000;
+// const CANCELED_BY_USER = 'Отменено пользователем!';
+// const ACCESS_DENIED = 'Недостаточно средств на счету!';
+
+// let totalPrice = orderPieces * pricePerDroid; 
+// let balanceCredit = credits - totalPrice; 
+// let message;
+
+//  if (orderPieces === null) {
+//   message = CANCELED_BY_USER;
+// }
+// else if (balanceCredit >= 0) {
+//   message =`Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов`;
+// }
+// else {
+//   message = ACCESS_DENIED;
+// }
+// console.log(message);
+
+// Задание 5
+const countryName = "КитаЙ";
+
+const CANCELED_BY_USER = 'Отменено пользователем!';
+const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
+const CHINA = 'Китай';
+const AUSTRALIA = 'Австралия';
+const INDIA = 'Индия';
+const JAMAICA = 'Ямайка';
+
+let message;
+let price = 0;
+let country;
+// if (countryName === null) {
+//   message = CANCELED_BY_USER;
+// } else {
+//   country = countryName[0].toUpperCase() + countryName.slice(1).toLowerCase;
+//   switch (country) {
+//       case 'CHINA':
+//       price = 100;
+//       break
+
+//       case 'AUSTRALIA':
+//       price = 170;
+//       break
+        
+//       case 'INDIA':
+//       price = 80;
+//       break
+
+//       case 'JAMAICA':
+//       price = 120;
+//       break
+      
+//       default: 
+//       console.log (NO_DELIVERY);
+//   }
+// }
+if (countryName === CHINA & countryName === AUSTRALIA & countryName === INDIA & countryName ===  JAMAICA ) {
+  message = `Доставка в ${country} будет стоить ${price} кредитов`;
+}
+console.log(message);
