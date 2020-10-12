@@ -25,6 +25,7 @@ premium : false
 mood : happy 
 "full time" : true 
 ' */
+// __________________________________________________________
 
 // Задача 2
 
@@ -40,6 +41,8 @@ mood : happy
 // console.log(countProps({a:1, b:1})); // 2
 
 // console.log(countProps({a:1, b:1, c:1, d:1, e:1})); // 5
+
+// -------------------------------------------------
 
 // Задача 3
 
@@ -81,6 +84,8 @@ mood : happy
 // // console.log(findBestEmployee(sellers)); 
 // // 'lux'  
 
+// ____________________________________________________________________
+
 // Задача 4
 
 // const countTotalSalary = function(employees) {
@@ -110,6 +115,7 @@ mood : happy
 // }
 //console.log(countTotalSalary(supports));
 // 500
+// _____________________________________________________________
 
 // Задача 5
 
@@ -142,30 +148,31 @@ mood : happy
 // console.log(getAllPropValues(products, 'category'));
 // //  []
 
+// __________________________________________________________
 // Задача 6
-function calculateTotalPrice (array, prop) {
-  'use strict';
-  let totalPrice = 0;
- for (let i = 0; i < array.length; i += 1) {
-   if (array[i].name === prop) {
-      totalPrice += array[i].price * array[i].quantity;
-   }
+// function calculateTotalPrice (array, prop) {
+//   'use strict';
+//   let totalPrice = 0;
+//  for (let i = 0; i < array.length; i += 1) {
+//    if (array[i].name === prop) {
+//       totalPrice += array[i].price * array[i].quantity;
+//    }
 
 
- }
-  return totalPrice;
-}
+//  }
+//   return totalPrice;
+// }
 
-// Объекты и ожидаемый результат
-const products = [
-    { name: 'Радар', price: 1300, quantity: 4 },
-    { name: 'Радар', price: 1280, quantity: 2 },
-    { name: 'Радар', price: 1320, quantity: 1 },
-    { name: 'Сканер', price: 2700, quantity: 1 },
-    { name: 'Сканер', price: 2500, quantity: 3 },
-    { name: 'Дроид', price: 400, quantity: 7 },
-    { name: 'Захват', price: 1200, quantity: 2 }
-]; 
+// // Объекты и ожидаемый результат
+// const products = [
+//     { name: 'Радар', price: 1300, quantity: 4 },
+//     { name: 'Радар', price: 1280, quantity: 2 },
+//     { name: 'Радар', price: 1320, quantity: 1 },
+//     { name: 'Сканер', price: 2700, quantity: 1 },
+//     { name: 'Сканер', price: 2500, quantity: 3 },
+//     { name: 'Дроид', price: 400, quantity: 7 },
+//     { name: 'Захват', price: 1200, quantity: 2 }
+// ]; 
 
 // console.log(calculateTotalPrice(products, 'Радар'));  
 // 9080

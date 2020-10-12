@@ -12,6 +12,8 @@
 //console.log(getItemsString(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']));
 //console.log(getItemsString([5, 10, 15]));
 
+// _________________________________________________________
+
 // Задача 2
 
 // const calculateEngravingPrice = (message = "", pricePerWord = 0) => pricePerWord * message.split(" ").length; 
@@ -24,6 +26,8 @@
 // console.log(calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20)); // 120
 
 // console.log(calculateEngravingPrice('Uno', 100)); // 100
+
+// ______________________________________________________
 
 // Задача 3
 
@@ -46,7 +50,9 @@
 
 // console.log(findLongestWord('May the force be with you'));
 // 'force'
-  
+
+// _________________________________________________________
+
 // Задача 4
 
 // function formatString (string, maxLength = 40) {
@@ -62,6 +68,8 @@
 
 //console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.', 30));
 // 'Vestibulum facilisis, purus ne...'
+
+// ____________________________________________________________
 
 // Задача 5
 
@@ -79,13 +87,15 @@
 
 // // console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
 
+// ____________________________________________________________
+
 // Задача 6
 
 // function mapArray(array) {
 //   'use strict';
 //   const numbers = new Array(array.length);
 //   for(let i = 0; i < array.length; i += 1) {
-  
+//   numbers[i] = (array[i] * 10);
     
 //   }
 //   return numbers;
@@ -96,6 +106,8 @@
 
 //console.log(mapArray([-2.5, 0, 2.5]));
 // [-25, 0, 25]
+
+// ___________________________________________________________
 
 // Задача 7
 
@@ -125,6 +137,8 @@
 // console.log(filterArray([{}, () => {}, 2]));
 // [2]
 
+// ___________________________________________________________
+
 // Задача 8
 
 // function reduceArray(array) {
@@ -145,6 +159,8 @@
 
 // console.log(reduceArray([1, 2, 2.5]));
 // 5.5
+
+// ________________________________________________________
 
 // Задача 9
 

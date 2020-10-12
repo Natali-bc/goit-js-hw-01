@@ -8,6 +8,8 @@
 // console.log(firstMessage);
 // console.log(secondMessage);
 
+// --------------------------------------------
+
 // Задание 2
 // const invoice = 100; 
 // const stock = 100;
@@ -15,6 +17,8 @@
 // const message = invoice <= 100 ? 'Заказ оформлен, с вами свяжется менеджер' : 'На складе недостаточно товаров!' ;
 
 // console.log(message);
+
+// ___________________________________________________________
 
 // Задание 3
 // const userPassword = 'jqueryismyjam';
@@ -39,6 +43,8 @@
 // }
 // console.log(message)
 
+// __________________________________________________________
+
 // Задание 4
 // const orderPieces = 4;
 
@@ -61,6 +67,8 @@
 //   message = ACCESS_DENIED;
 // }
 // console.log(message);
+
+// ___________________________________________________________
 
 // Задание 5
 // const countryName = "КитаЙ";
