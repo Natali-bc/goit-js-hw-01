@@ -623,16 +623,125 @@
 // }
 // ];
 // - Вывести массив имён учёных/изобретателей
-// const names = inventors.map(inventors => inventors.first);
-// console.log(names);
 
+// const names = inventors.map(el => el.first);
+// console.log(names);
+// __________________________________________________________________
 // - Вывести массив тех кто родился в 19-ом веке
-// const century = year / 100;
-// const filteredCentury = inventors.filter(inventors => inventors.century);
+
+// const filteredCentury = inventors.filter(el => el.year >= 1800 && el.year < 1900);
+// // Math.floor(y / 100 + 1)
+
 // console.log(filteredCentury);
 
+// __________________________________________________________________
 // - Вывести массив тех, кто прожил больше 50-ти лет
+
+// const lifeDuration = inventors.filter(el => {
+//   let age = el.passed - el. year;
+//   return age > 50;
+// })
+// console.log(lifeDuration);
+
+// const lifeDuration = inventors.filter(el => el.passed - el.year > 50);
+// console.log(lifeDuration);
+// ___________________________________________________________________________
 // - Найти того, кто работал с радиацией и добавить ей свойство "замужем", в значение запистаь имя мужа
+
+// const radiationWorker = inventors.map(el => {
+//   if(el.first === 'Marie') {
+//     return el = {...el, married: "Pierre"}
+//   }
+//   else {
+//     return el
+//   }
+// })
+// console.log(radiationWorker);
+// ______________________________________________________________________
 // - Вывести фамилии тех, в чьём имени есть буква "е"
+
+// const lastName = inventors.filter(el => {
+// return el.first.includes("e") || el.first.includes("E");
+// })
+// .forEach(el => console.log(el.last));
+
+// console.log(lastName);
+
+// _____________________________________________________________________________
 // - Получить массив объектов отсортированный по имени (по алфавиту).
+
+// const sortByName = inventors.sort((a, b) => {
+// if (a.first < b.first) {
+//   return -1
+// }
+
+// else if (a.first < b.first) {
+//   return 1;
+// }
+// else return 0;
+// }
+// )
+// console.log(sortByName);
+// ------------------------------------------------------------------------
 // - Найти сумму лет жизни всех учёных
+
+// const s = inventors.reduce((sum, el) => {
+//   return sum +=  el.passed - el.year;
+
+// },0)
+// console.log(s);
+
+// _____________________________________________________________________
+
+// ["js", "nodejs", "html", "css", "html", "js", "nodejs", "css", "react", "js", "nodejs", "react"]
+
+// const a = tags.filter((el, i, arr)=> {
+//     return arr.indexOf(el) === i ? el : '';
+// })
+
+// console.log(a)
+
+// __________________________________________________________________________
+
+
+// let worker = {
+//     workSchedule: [
+//         {day: 'M', hours: 9},
+//         {day: 'T', hours: 10},
+//         {day: 'W', hours: 11},
+//         {day: 'T', hours: 5},
+//         {day: 'F', hours: 12},
+//         ],
+//         penalty: [
+//         {day: 'M', value: 0},
+//         {day: 'T', value: 120},
+//         {day: 'W', value: 50},
+//         {day: 'T', value: 0},
+//         {day: 'F', value: 35},
+//         ],
+//         premium: 500,
+// }
+// написати ф-ю getSalary(worker, rate) яка приймає аргументами обєкт робітника і погодинну ставку.
+// Ф-я вертає зарплату робітника за тиждень з урахуванням штрафів і премій
+// hours - години роботи
+// value - сума штрафу
+// premium - премія
+
+
+// const getSalary = function(worker, rate) {
+//   const {workSchedule, penalty, premium} = worker;
+//  const salary =  workSchedule.reduce((accum, el) => {
+//   return accum += el.hours * rate;
+
+//   }, 0)
+// const fine = penalty.reduce((accum, el) => {
+// return accum += el.value;
+
+// }, 0)
+// return salary + premium - fine;
+// }
+
+// console.log(getSalary(worker, 20)); // 1235
+// console.log(getSalary(worker, 8)); // 671
+
+// ______________________________________________________________________
