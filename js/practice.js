@@ -4,7 +4,7 @@
 //   color: "white",
 //   isEngineOn: false,
 //   isLightOn: false,
-  
+
 //   engineToggle() {
 //     car.isEngineOn = !car.isEngineOn;
 //     console.log(car.isEngineOn);
@@ -13,7 +13,7 @@
 //     car.isEngineOn ? car.speed += n : "";
 //     car.isEngineOn ? console.log(`Speed is increased on ${n}. Current speed: ${car.speed}`) : "";
 //   },
-  
+
 //   speedOff(n) {
 //     car.isEngineOn ? car.speed -= n : "";
 //     car.isEngineOn ? console.log(`Speed is reduced on ${n}. Current speed: ${car.speed}`) : "";
@@ -53,7 +53,6 @@
 //   array.push({name, price})
 //   console.log(array);
 // }
-
 
 // ___________________________________________________
 
@@ -98,7 +97,7 @@
 //    console.log(a+b);
 // }
 // }
-// sum(1)(2) 
+// sum(1)(2)
 // sum(5)(-1)
 
 // _____________________________________________________
@@ -110,7 +109,6 @@
 // let globalCars = [];
 // const carSale = function() {
 // let cars = [];
-
 
 // const addItem = function(name, color, price) {
 // cars.push({name, color, price});
@@ -164,14 +162,14 @@
 //   up() {
 //     this.step++;
 //     return this;
-   
+
 //   },
 //   down() {
 //     this.step--;
 //     return this;
-   
+
 //   },
-//   showStep: function() { 
+//   showStep: function() {
 //   console.log( this.step );
 //   return this;
 //   }
@@ -198,25 +196,22 @@
 //   },
 // };
 
-
 // askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
 
 // ________________________________________________________________
 
 // Дан массив с числами(Написать самим). Ваша ф-я возвращает среднее арифметическое его элементов
 
-
 // const filterArray = function(array) {
 //   let sum = 0;
 
-
 // for (let i = 0; i < array.length; i += 1 ) {
 //   sum += array[i];
-// } 
+// }
 // return sum / array.length;
 // }
 
-// console.log(filterArray([25, 46, 74, 51]));   
+// console.log(filterArray([25, 46, 74, 51]));
 // 49
 
 // _____________________________________________________________
@@ -256,7 +251,6 @@
 //   let jackets = new ItemToSale("S", "jackets", "black");
 //   let dresses = new ItemToSale("L", "dresses", "white");
 
-
 //   tshirts.saveToStatistics();
 //   jackets.saveToStatistics();
 //   dresses.saveToStatistics();
@@ -264,7 +258,6 @@
 //   console.log(statistics);
 
 // ______________________________________________________________
- 
 
 // Напишите ф-цию конструктор, которая будет создавать избирателя (name);
 // У избирателя будет метод vote(presidentName) который будет менят глобальный объект
@@ -295,11 +288,11 @@
 //  this.number2= prompt(`Введите 2 число`)
 //   }
 //   this.sum = function() {
- 
+
 //     return + this.number1 + +this.number2;
 //   }
 //   this.mul = function() {
-  
+
 //     return + this.number1 * +this.number2;
 //   }
 // }
@@ -311,12 +304,11 @@
 
 // ___________________________________________________________
 
-
 // Реализуйте класс Worker (Работник), который будет иметь следующие свойства: name (имя), surname (фамилия), rate (ставка за день работы), days (количество отработанных дней). Также класс должен иметь метод getSalary(), который будет выводить зарплату работника. Зарплата - это произведение (умножение) ставки rate на количество отработанных дней days.
 // Вот так должен работать наш класс:
 
 // class Worker {
-  
+
 //   constructor(name, surname, rate, days) {
 // this.name = name;
 // this.surname = surname;
@@ -326,7 +318,6 @@
 // getSalary = function() {
 //   return this.rate * this.days
 // }
-
 
 // }
 
@@ -342,7 +333,7 @@
 // Модифицируйте класс Worker из предыдущей задачи следующим образом: сделайте все его свойства приватными, а для их чтения сделайте методы-геттеры. Наш класс теперь будет работать так:
 
 // class Worker {
-  
+
 //   constructor(name, surname, rate, days) {
 // this._name = name;
 // this._surname = surname;
@@ -362,7 +353,7 @@
 //   return this._rate
 // }
 // get getDays() {
-//   return this._days 
+//   return this._days
 // }
 // }
 
@@ -373,15 +364,14 @@
 // console.log(worker.getDays); //выведет 31
 // console.log(worker.getSalary()); //выведет 310 - то есть 10*31
 
-
 // _________________________________________________
 
-// Модифицируйте класс Worker из предыдущей задачи следующим образом: 
-// для свойства rate и для свойства days сделайте еще и методы-сеттеры. 
+// Модифицируйте класс Worker из предыдущей задачи следующим образом:
+// для свойства rate и для свойства days сделайте еще и методы-сеттеры.
 // Наш класс теперь будет работать так:
 
 // class Worker {
-  
+
 //   constructor(name, surname, rate, days) {
 // this._name = name;
 // this._surname = surname;
@@ -398,10 +388,10 @@
 //   return this._surname
 // }
 // get getRate() {
-//   return this._rate; 
+//   return this._rate;
 // }
 // get getDays() {
-//   return this._days; 
+//   return this._days;
 // }
 // set setRate(value) {
 // return this._rate = value;
@@ -411,7 +401,6 @@
 // }
 // }
 
-
 // var worker = new Worker('Иван', 'Иванов', 10, 31);
 // console.log(worker.getRate);
 //  //выведет 10
@@ -420,7 +409,7 @@
 // // worker.getSalary; //выведет 310 - то есть 10*31
 // console.log(worker.getSalary());
 // //Теперь используем сеттер:
-// console.log(worker.setRate = 20); 
+// console.log(worker.setRate = 20);
 // //увеличим ставку
 // console.log(worker.setDays = 10);
 //  //уменьшим дни
@@ -428,22 +417,21 @@
 
 // ____________________________________________________
 
-// Реализуйте класс MyString, 
-// который будет иметь следующие методы: 
-// метод reverse(), который параметром принимает строку, 
-// а возвращает ее в перевернутом виде, метод ucFirst(), 
-// который параметром принимает строку, а возвращает эту же строку, 
-// сделав ее первую букву заглавной и метод ucWords, который принимает 
+// Реализуйте класс MyString,
+// который будет иметь следующие методы:
+// метод reverse(), который параметром принимает строку,
+// а возвращает ее в перевернутом виде, метод ucFirst(),
+// который параметром принимает строку, а возвращает эту же строку,
+// сделав ее первую букву заглавной и метод ucWords, который принимает
 // строку и делает заглавной первую букву каждого слова этой строки.
 // Наш класс должен работать так:
 
-
 // class MyString {
-  
+
 // reverse(str) {
-  
+
 //   return str.split("").reverse().join("");
- 
+
 // }
 // ucFirst(str) {
 
@@ -454,7 +442,7 @@
 // let result = '';
 // for (let el of array) {
 //    result += el[0].toUpperCase() + el.slice(1) + " ";
-   
+
 // }
 // return result
 // }
@@ -486,14 +474,10 @@
 
 // ____________________________________________________________________
 
-
 // const obj = [ [1, 2, 3], [4, 5, 6], [7,8,9] ];
-
 
 // console.log(obj[2][2]);
 // ______________________________________________________________
-
-
 
 // I)
 // 1) Написати ф-ю яка приймає рік
@@ -512,7 +496,7 @@
 // 1) Запитуємо в користувача роки до тих пір поки він не натисне Cancel
 // 2) Всі роки які вводить користувач записується в масив years
 //  3) Коли зупинився цикл потрібно перебрати масив years
-// і вивести в консоль запис 
+// і вивести в консоль запис
 // 1952 рік - 20 століття
 // 1440 рік - 15 століття
 
@@ -530,8 +514,7 @@
 //   }
 //   while (askYear !==  null);
 //   years.forEach((year) => console.log(`${year}`, `${findCentury(year)}`));
- 
- 
+
 // }
 // fn();
 
@@ -624,7 +607,7 @@
 // ];
 // - Вывести массив имён учёных/изобретателей
 
-// const names = inventors.map(el => el.first);
+// const names = inventors.map(el => el.inventors);
 // console.log(names);
 // __________________________________________________________________
 // - Вывести массив тех кто родился в 19-ом веке
@@ -703,7 +686,6 @@
 
 // __________________________________________________________________________
 
-
 // let worker = {
 //     workSchedule: [
 //         {day: 'M', hours: 9},
@@ -727,7 +709,6 @@
 // value - сума штрафу
 // premium - премія
 
-
 // const getSalary = function(worker, rate) {
 //   const {workSchedule, penalty, premium} = worker;
 //  const salary =  workSchedule.reduce((accum, el) => {
@@ -745,3 +726,44 @@
 // console.log(getSalary(worker, 8)); // 671
 
 // ______________________________________________________________________
+
+// const min = 45;
+// if (min >= 0 && min <= 14) {
+//   console.log('First');
+// } else if (min >= 15 && min <= 30) {
+//   console.log('Second');
+// } else if (min >= 31 && min <= 45) {
+//   console.log('Third');
+// } else if (min >= 46 && min <= 59) {
+//   console.log('Fourth');
+// }
+// _____________________________________________________
+// 2) Дан список в штмл. Вставьте в него 3 лишки с текстом
+
+// const ul = document.querySelector('ul');
+// const arr = ['Hello USA', 'Hello France', 'Hello Ukraine'];
+// for (let i = 0; i < 3; i += 1) {
+//   const li = document.createElement('li');
+//   li.textContent = arr[i];
+//   ul.append(li);
+// }
+
+// ________________________________________________________
+// 3)Создайте 5 красных кругов 100х100 пикселей
+// (стили подключаються в цсс)
+
+// const body = document.querySelector('body');
+// for (let i = 0; i < 5; i += 1) {
+//   const div = document.createElement('div');
+//   div.classList.add('circle');
+//   body.append(div);
+// }
+
+// 4)Добавьте всем дивам нумерацию (в свойство текс контент записывается какой это по счёту див)
+
+// const divList = document.querySelectorAll('div');
+// divList.forEach((el, i) => {
+//   el.textContent = `${i + 1}`;
+// });
+
+// 5)Создайте 3 картинки с котиками за одно операцию
